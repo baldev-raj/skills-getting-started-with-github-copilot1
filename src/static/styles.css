@@ -175,6 +175,37 @@ footer {
   box-shadow: 0 1px 0 rgba(13,71,161,0.05);
 }
 
+/* Participant list item with remove button */
+.participant-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 6px; /* make space for button */
+}
+
+.participant-email {
+  display: inline-block;
+}
+
+.participant-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #c62828;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.participant-remove:hover {
+  background: rgba(198,40,40,0.08);
+}
+
 /* Fallback / helper item when there are no participants */
 .participants-list li.no-participants {
   background: transparent;
